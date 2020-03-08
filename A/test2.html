@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      body {
+      background-color: #eee;
+      }
+      input {
+      font-size:30px;
+      font-family: cursive;
+      color: black;
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: hidden;
+      background-color: #eee;
+      }
+      .no-outline:focus {
+      outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <p>Ordinary input field with box outline:</p>
+      <input type="text"  value="Enter Something" disabled>
+      <p>Input field without outline:</p>
+      <input type="text" class="no-outline" value="Enter Something" disabled>
+      <input type="text" id="price" value="10">
+    </form>
+
+    
+    <h1>The onclick Event</h1>
+
+<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var no,no1;
+
+  no1 = document.getElementById("price").value;
+  no = parseInt(no1);
+  no = no * 2;
+  document.getElementById("demo").innerHTML = no;
+  
+}
+</script>
+
+</body>
+</html>
